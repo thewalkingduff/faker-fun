@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // init the data store
-db.defaults({ users: [], acccounts: [] }).write();
+db.defaults({ users: [], accounts: [] }).write();
 
 let port = process.env.PORT || 3000;
 
