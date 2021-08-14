@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // init the data store
-db.defaults({ users: [] }).write();
+db.defaults({ users: [], acccounts: [] }).write();
 
 let port = process.env.PORT || 3000;
 
@@ -29,13 +29,19 @@ app.get('/data', function (req, res) {
 });
 
 app.get('/accounts', function(req, res) {
-    res.send(<h1>POST</h1>)
-    console.log('Get: ', req.body)
+    res.send(db.get('accounts').value())
 })
 
 app.post('/accounts', function(req, res) {
-    console.log('Post: ', req.body)
-    res.send(<h1>POST</h1>)
+    let account = {
+        'name': req.body.name,
+        'number': req.body.number,
+        'email': req.body.email,
+        'username': req.body.username,
+    }
+    db.get('accounts').push(account).write();
+    console.log(db.get('accounts').value());
+    res.send(db.get('accounts').value());  
 })
 
 // add user
