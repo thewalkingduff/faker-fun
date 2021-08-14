@@ -28,6 +28,16 @@ app.get('/data', function (req, res) {
     res.send(db.get('users').value());
 });
 
+app.get('/accounts', function(req, res) {
+    res.send(<h1>POST</h1>)
+    console.log('Get: ', req.body)
+})
+
+app.post('/accounts', function(req, res) {
+    console.log('Post: ', req.body)
+    res.send(<h1>POST</h1>)
+})
+
 // add user
 app.post('/add', function (req, res) {
     var user = {
