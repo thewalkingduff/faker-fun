@@ -25,7 +25,7 @@ let port = process.env.PORT || 3000;
 
 // return all users
 app.get('/data', function (req, res) {
-    res.send(db.get('users').value());
+    res.send(db.get('users', 'accounts').value());
 });
 
 app.get('/accounts', function(req, res) {
@@ -34,10 +34,9 @@ app.get('/accounts', function(req, res) {
 
 app.post('/accounts', function(req, res) {
     let account = {
-        'name': req.body.name,
-        'number': req.body.number,
-        'email': req.body.email,
-        'username': req.body.username,
+        'accountNum': req.body.account,
+        'accountName': req.body.accountName,
+        'animals': req.body.animals,
     }
     db.get('accounts').push(account).write();
     console.log(db.get('accounts').value());
