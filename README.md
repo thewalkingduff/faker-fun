@@ -1,4 +1,5 @@
 <h1 align="center">Welcome to faker-fun 👋</h1>
+<img src="public/images/faker-fun.png>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/node-14.x-blue.svg" />
@@ -16,7 +17,7 @@
   </a>
 </p>
 
-> Node with Express app on Heroku.  Experimenting with faker.js data and Postman.
+> Node with Express app on Heroku. Experimenting with faker.js data and Postman.
 
 ### 🏠 [Homepage](https://github.com/kogsio/littletiers#readme)
 
@@ -48,10 +49,10 @@ npm run test
 
 👤 **Brendan Duffy**
 
-* Website: www.devduffy.com
-* Twitter: [@duffmancode](https://twitter.com/duffmancode)
-* Github: [@thewalkingduff](https://github.com/thewalkingduff)
-* LinkedIn: [@devduffy](https://linkedin.com/in/devduffy)
+- Website: www.devduffy.com
+- Twitter: [@duffmancode](https://twitter.com/duffmancode)
+- Github: [@thewalkingduff](https://github.com/thewalkingduff)
+- LinkedIn: [@devduffy](https://linkedin.com/in/devduffy)
 
 ## 🤝 Contributing
 
@@ -66,5 +67,6 @@ Give a ⭐️ if this project helped you!
 Copyright © 2021 [Brendan Duffy](https://github.com/thewalkingduff).<br />
 This project is [MIT](https://github.com/kogsio/littletiers/blob/master/LICENSE) licensed.
 
-***
+---
+
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
