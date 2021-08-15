@@ -1,4 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body {
+    background: #87AAB9;
+    font-family: 'Anton', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+    color: #F9F3C5;
+}
+
+ul li {
+    padding: 1rem;
+}
+
+ul li a {
+    font-size: 2rem;
+    text-decoration: none;
+    background: #646F6F;
+    color: #E9E581;
+}
+ul li a:hover {
+    background: #646F6F;
+    color: #F9F3C5;
+}
+
+button {
+    background: #646F6F !important;
+    color: #E9E581 !important;
+    margin-bottom: 2rem;
+}
+button:hover {
+    color: #F9F3C5 !important;
+}
+
 .grid-container {
     display: grid;  
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }    
+
+#status {
+    margin: 3rem;
+}
