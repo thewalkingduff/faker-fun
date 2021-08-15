@@ -1,5 +1,7 @@
 <h1 align="center">Welcome to faker-fun 👋</h1>
+<a href="https://faker-fun.herokuapp.com" target="_blank">
 <img src="public/images/faker-fun.png" >
+</a>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <img src="https://img.shields.io/badge/node-14.x-blue.svg" />
